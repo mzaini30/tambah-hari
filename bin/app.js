@@ -9,6 +9,6 @@ jQuery(function(){
 		nanti_indo = nanti.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 		// $('#komentar').val('<!-- '+nanti_indo+' -->');
 		$('#jekyll').val(`'${nanti}' # ${nanti_indo}`);
-		$('#jumlah-harga').val(harga * tambah);
+		$('#jumlah-harga').val((harga * tambah).toLocaleString('id-ID'));
 	});
 });
