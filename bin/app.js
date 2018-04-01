@@ -1,5 +1,5 @@
 jQuery(function(){
-	$('.convert').click(function(){
+	$('[type="text"]').keyup(function(){
 		sekarang = new Date();
 		nanti = new Date();
 		tambah = Number($('#hari').val());
